@@ -1,0 +1,137 @@
+/* =========================
+   LAYANAN - MODERN UI
+========================= */
+
+:root {
+  --primary: #0d6efd;
+  --secondary: #4da3ff;
+  --dark: #0f172a;
+  --bg: #f8fafc;
+}
+
+/* GLOBAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  margin: 0;
+}
+/* NAVBAR */
+.main-navbar {
+  backdrop-filter: blur(10px);
+}
+
+.navbar .container-fluid {
+  padding-left: 10px;
+}
+
+.logo {
+  height: 50px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+/* HERO */
+.hero-mini {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.hero-mini h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-mini p {
+  opacity: 0.9;
+}
+
+/* SECTION */
+.container {
+  margin-top: 40px;
+}
+
+/* CARD LAYANAN */
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  margin-top: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.service-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta-section h3 {
+  font-weight: bold;
+}
+
+.cta-section .btn {
+  background: white;
+  color: var(--primary);
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+  transition: 0.3s;
+}
+
+.cta-section .btn:hover {
+  background: #e6e6e6;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-mini h1 {
+    font-size: 26px;
+  }
+}
