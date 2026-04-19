@@ -1,0 +1,197 @@
+/* ROOT WARNA */
+:root {
+  --primary: #0d6efd;
+  --secondary: #4da3ff;
+  --dark: #0f172a;
+  --bg: #f8fafc;
+}
+
+/* GLOBAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  margin: 0;
+}
+
+/* NAVBAR */
+.main-navbar {
+  backdrop-filter: blur(10px);
+}
+
+.navbar .container-fluid {
+  padding-left: 10px;
+}
+
+.logo {
+  height: 50px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+/* HERO (FIX RESPONSIVE) */
+.hero-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .hero-section img {
+    height: 40vh;
+  }
+}
+
+/* BUTTON DI BAWAH HERO */
+.booking-section {
+  margin-top: 5px;
+  padding-bottom: 40px;
+}
+
+.booking-section .btn {
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.booking-section .btn:hover {
+  transform: translateY(-5px);
+}
+
+/* SECTION UMUM */
+.section-title {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.section-text {
+  color: #6c757d;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* ABOUT */
+.about-section {
+  padding: 70px 0;
+}
+
+/* FEATURES */
+.features-section {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.feature-card {
+  border-radius: 20px;
+  padding: 25px;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* SERTIFIKASI */
+.certification-section {
+  padding: 70px 0;
+}
+
+.cert-card {
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.cert-card img {
+  width: 60px;
+  margin-bottom: 10px;
+  background: #e7f1ff;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.cert-card:hover img {
+  transform: scale(1.1);
+}
+
+.payment-logo {
+  width: 80px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.payment-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 70px 0;
+}
+
+.cta-section .btn {
+  background: white;
+  color: var(--primary);
+  border: none;
+  transition: 0.3s;
+}
+
+.cta-section .btn:hover {
+  background: #e6e6e6;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--dark);
+  color: white;
+  padding: 25px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* RESPONSIVE TAMBAHAN */
+@media (max-width: 768px) {
+  .hero-section img {
+    height: 40vh;
+  }
+
+  .booking-section .btn {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
